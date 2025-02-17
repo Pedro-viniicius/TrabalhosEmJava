@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="326.0" prefWidth="562.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="controller.MembroDetalhesController">
+   <children>
+      <VBox layoutX="102.0" layoutY="15.0" prefHeight="296.0" prefWidth="425.0">
+         <children>
+            <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Detalhes do Membro">
+               <padding>
+                  <Insets left="170.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="textFieldNome" promptText="Nome">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldCPF" promptText="CPF">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldDataNascimento" promptText="Data de Nascimento (yyyy-MM-dd)">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldGenero" promptText="Gênero">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldEstadoCivil" promptText="Estado Civil">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldDataBatismo" promptText="Data de Batismo (yyyy-MM-dd)">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldMinisterio" promptText="Ministério">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldStatus" promptText="Status">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btnSalvar" mnemonicParsing="false" text="Salvar Alterações">
+               <VBox.margin>
+                  <Insets left="190.0" top="1.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox layoutX="25.0" layoutY="42.0" prefHeight="216.0" prefWidth="69.0">
+         <children>
+            <Label text="Nome" />
+            <Label text="CPF">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Nascimento">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Genero">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Esta Civil">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Batismo">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Ministerio">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Status">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

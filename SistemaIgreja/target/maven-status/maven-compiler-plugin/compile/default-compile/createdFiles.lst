@@ -1,0 +1,15 @@
+models\Endereco.class
+models\Beneficiario.class
+connection\DatabaseConnection.class
+models\Contatos.class
+controller\DashboardController.class
+connection\Main.class
+controller\ChartManager.class
+models\Lideres.class
+controller\LoginController.class
+controller\MembroDetalhesController.class
+models\Ministerios.class
+models\Eventos.class
+controller\MembrosController.class
+models\Membro.class
+models\Visitante.class
