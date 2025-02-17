@@ -61,6 +61,7 @@ public class MembrosController {
                 abrirJanelaDetalhes(id);
             }
         });
+        btnCadastrar.setOnAction(event -> abrirJanelaCadastro());
 
         btnVoltar.setOnAction(event -> {
             try {
@@ -108,6 +109,19 @@ public class MembrosController {
         } catch (NumberFormatException e) {
             mostrarErro("Erro ao extrair ID do membro", e);
             return -1;
+        }
+    }
+    
+    private void abrirJanelaCadastro() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/openjfx/sistemaigreja/cadastrar.fxml"));
+            Stage stage = new Stage();
+            stage.setScene(new Scene(loader.load()));
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setTitle("Cadastro de Membro");
+            stage.showAndWait();
+        } catch (IOException e) {
+            mostrarErro("Erro ao abrir a tela de cadastro", e);
         }
     }
 
