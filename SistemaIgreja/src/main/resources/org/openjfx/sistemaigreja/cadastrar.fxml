@@ -1,11 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="308.0" prefWidth="409.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="controller.CadastroController">
+   <children>
+      <VBox layoutX="149.0" layoutY="53.0" prefHeight="190.0" prefWidth="218.0">
+         <children>
+            <TextField fx:id="textFieldNome" promptText="Nome...">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldCPF" promptText="CPF...">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldDataNascimento" promptText="Data Nascimento...">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="ComboBoxGenero" prefHeight="26.0" prefWidth="220.0" />
+            <ComboBox fx:id="ComboBoxEstadoCivil" prefHeight="26.0" prefWidth="218.0" />
+            <TextField fx:id="textFieldDataBatismo" promptText="Data Batismo...">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="ComboBoxMinisterio" prefHeight="26.0" prefWidth="218.0" />
+            <ComboBox fx:id="ComboBoxStatus" prefHeight="26.0" prefWidth="218.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="42.0" layoutY="50.0" prefHeight="218.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="LabelNome" text="Nome">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelCPF" text="CPF">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelDataNascimento" text="Data Nascimento">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelGenero" text="Genero">
+               <VBox.margin>
+                  <Insets top="9.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelEstadoCivil" text="Estado Civil">
+               <VBox.margin>
+                  <Insets top="9.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelDataBatismo" text="Data Batismo">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelMinisterio" text="Ministerio">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelStatus" text="Status">
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="btnSalvar" layoutX="275.0" layoutY="268.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="Salvar" />
+      <Label fx:id="LabelCadastro" layoutX="180.0" layoutY="14.0" text="Cadastro" />
+   </children>
 </AnchorPane>
