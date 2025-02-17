@@ -379,10 +379,10 @@ public Map<String, Map<String, Integer>> buscarDistribuicaoIdadePorGenero() {
         }
     }
 
-    public void atualizarNoBanco() {
+    public boolean atualizarNoBanco() {
         String sql = "UPDATE membros SET nome = ?, CPF = ?, dataNascimento = ?, genero = ?, estadoCivil = ?, " +
                      "dataBatismo = ?, ministerio = ?, status = ? WHERE id = ?";
-
+       boolean statuss = false;
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement ps = connection.prepareStatement(sql)) {
 
@@ -397,8 +397,10 @@ public Map<String, Map<String, Integer>> buscarDistribuicaoIdadePorGenero() {
             ps.setInt(9, id);
 
             ps.executeUpdate();
+            return statuss = true;
         } catch (SQLException e) {
             e.printStackTrace();
+            return statuss = false;
         }
     }
 }
