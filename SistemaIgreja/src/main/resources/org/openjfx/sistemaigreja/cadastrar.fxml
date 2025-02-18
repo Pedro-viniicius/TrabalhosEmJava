@@ -8,10 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="308.0" prefWidth="409.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="controller.CadastroController">
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroController">
    <children>
-      <VBox layoutX="149.0" layoutY="53.0" prefHeight="190.0" prefWidth="218.0">
+      <VBox layoutX="149.0" layoutY="53.0" prefHeight="361.0" prefWidth="216.0">
          <children>
             <TextField fx:id="textFieldNome" promptText="Nome...">
                <opaqueInsets>
@@ -31,7 +30,7 @@
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
                </VBox.margin>
             </TextField>
-            <ComboBox fx:id="ComboBoxGenero" prefHeight="26.0" prefWidth="220.0" />
+            <ComboBox fx:id="ComboBoxGenero" prefHeight="25.0" prefWidth="218.0" />
             <ComboBox fx:id="ComboBoxEstadoCivil" prefHeight="26.0" prefWidth="218.0" />
             <TextField fx:id="textFieldDataBatismo" promptText="Data Batismo...">
                <VBox.margin>
@@ -40,6 +39,46 @@
             </TextField>
             <ComboBox fx:id="ComboBoxMinisterio" prefHeight="26.0" prefWidth="218.0" />
             <ComboBox fx:id="ComboBoxStatus" prefHeight="26.0" prefWidth="218.0" />
+            <TextField fx:id="textFieldCEP" promptText="CEP...">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldEstado" promptText="Estado...">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldCidade" promptText="Cidade...">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldBairro" promptText="Bairro...">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldRua" promptText="Rua...">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldNumero" prefHeight="25.0" prefWidth="176.0" promptText="Numero...">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textFieldEmail" promptText="Email..." />
+            <VBox fx:id="vboxTelefones" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="textFieldTelefone" promptText="Telefone...">
+                     <VBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
          </children>
       </VBox>
       <VBox layoutX="42.0" layoutY="50.0" prefHeight="218.0" prefWidth="100.0">
@@ -84,9 +123,50 @@
                   <Insets top="13.0" />
                </VBox.margin>
             </Label>
+            <Label fx:id="LabelCEP" text="CEP">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelEstado" text="Estado">
+               <VBox.margin>
+                  <Insets top="6.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelCidade" text="Cidade">
+               <VBox.margin>
+                  <Insets top="6.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelBairro" text="Bairro">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelRua" text="Rua">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelNumero" text="Numero">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="LabelNumero1" text="Email">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="LabelNumero11" text="Telefone">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
          </children>
       </VBox>
-      <Button fx:id="btnSalvar" layoutX="275.0" layoutY="268.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="Salvar" />
-      <Label fx:id="LabelCadastro" layoutX="180.0" layoutY="14.0" text="Cadastro" />
+      <Button fx:id="btnSalvar" layoutX="274.0" layoutY="487.0" mnemonicParsing="false" onAction="#handleBtnSalvar" prefHeight="26.0" prefWidth="91.0" text="Salvar" />
+      <Label fx:id="LabelCadastro" layoutX="233.0" layoutY="14.0" text="Cadastro" />
+      <Button fx:id="btnAdicionarNumero" layoutX="365.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleBtnAdicionarNumero" text="+" />
    </children>
 </AnchorPane>
